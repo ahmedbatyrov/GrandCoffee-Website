@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 2200px;
+    background-color: aqua;
+}
+.header{
+    width: 100%;
+    height: 65px;
+    background-color: rgb(75, 73, 73);
+    color: white;
+    position: relative;
+    display: flex;
+}
+.header>span{
+    display: flex;
+    position: relative;
+
+}
+.header>span>.grc{
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 20px;
+    color: white;
+    font-size: 10px;
+}
+.header>span>.grc>b>a{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.header>span>.nav_bar{
+    position: absolute;
+    margin-left: 1400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+} 
+.header>span>.nav_bar>a{
+    margin: 7px;
+    /* color: ; */
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: monospace;
+    transition: all 3s ease;
+
+}
+.header>span>.nav_bar>a:hover{
+    color: red;
+}
+.fa-search{
+    position: absolute;
+    color: red;
+}
+.main{
+    width: 100%;
+    height: 65vh;
+    background: url(../img/banner-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main>h1{
+    text-align: center;
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 135px;
+    font-size: 47px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main>h2{
+    position: absolute;
+    text-align: center;
+    margin-left: 260px;
+    margin-top: 207px;
+    margin-left: 295px;
+    font-size: 60px;
+    font-weight: 900;
+    font-family: monospace;
+    color: white;
+}
+.main>p{ 
+    /* text-align: center; */
+    width: 350px;
+    height: 50px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 295px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.main>button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 400px;
+    cursor: pointer;
+    margin-left: 300px;
+    transition: all 1s ease;
+}
+.main>button:hover{
+    background-color: grey;
+}
+.main2{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+.main2>img{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 30px;
+}
+.main2>h1{
+    position: absolute;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 500px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: 700;
+    color: red;
+}
+.main2>p{
+    /* display: block; */
+    height: 500px;
+    margin: 5px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 325px;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: 600;
+}
+.main2>button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+    position: absolute;
+    margin-top: 270px;
+    cursor: pointer;
+    margin-left: 320px;
+    transition: all 1s ease;   
+}
+.main2>button:hover{
+    background-color: grey;
+}
+.our_gallery{
+    width: 100%;
+    height: 920px;
+    background-color: white;
+    position: relative;
+}
+.our_gallery>h1{
+    text-transform: uppercase;
+    margin-left: 45%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: red;
+    position: absolute;
+}
+.our_gallery>p{
+    align-items: center;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    margin-top: 45px;
+    font-size: 20px;
+    font-family: monospace;
+    margin-left: 21%;
+}
+.our_gallery>.grid{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
+}
+.item{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    width: 200px;
+    gap: 10px;
+    background-color: aquamarine;
+}
+.item>.fa-search{
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 75px;
+    font-size: 60px;
+    opacity: 0;
+    color: black;
+    transition: all 1s ease;
+}
+.item>.fa-search:hover{
+    opacity: 1;
+}
+.item1{
+    background: url(../img/img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item1:hover{
+    opacity: 0.5;
+}
+.item2{
+    background: url(../img/img-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item2:hover{
+    opacity: 0.5;
+}
+.item3{
+    background: url(../img/img-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item3:hover{
+    opacity: 0.5;
+}
+.item4{
+    background: url(../img/img-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item4:hover{
+    opacity: 0.5;
+}
+.item5{
+    background: url(../img/img-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item5:hover{
+    opacity: 0.5;
+}
+.item6{
+    background: url(../img/img-6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item6:hover{
+    opacity: 0.5;
+}
+.item7{
+    background: url(../img/img-7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item7:hover{
+    opacity: 0.5;
+}
+.item8{
+    background: url(../img/img-8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item8:hover{
+    opacity: 0.5;
+}
+.item9{
+    background: url(../img/img-9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.item9:hover{
+    opacity: 0.5;
+}
+
+
+
+.our_gallery>button{
+    width: 150px;
+    height: 50px;
+    margin-top: 825px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 50%;
+    transition: all 1s ease;
+}
+.our_gallery>button:hover{
+    background-color: gray;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+}
+footer>.about{
+    color: white;
+    margin-top: 80px;
+    margin-left: 180px;
+}
+footer>.about>p{
+    margin-top: 3px;
+    font-size: 18px;
+}
+footer>.about>h1{
+    margin-left: 80px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+footer>.menu{
+    color: white;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+footer.menu>p{
+    margin-top: 3px;
+    font-size: 18px;
+    margin-left: 80px;
+}
+footer>.menu>h1{
+    margin-left: 80px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer>.link{
+    color: white;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+footer>.link>p{
+    margin-top: 3px;
+    font-size: 18px;
+    margin-left: 120px;
+}
+footer>.link>h1{
+    margin-left: 80px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer>.contact{
+    color: white;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+footer>.contact>p{
+    margin-top: 3px;
+    font-size: 18px;
+    margin-left: 120px;
+}
+footer>.contact>h1{
+    margin-left: 80px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
